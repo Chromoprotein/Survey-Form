@@ -1,0 +1,96 @@
+body {
+  font-family: Tahoma;
+  background-color: #68577d;
+  color:#ffffff;
+}
+
+#title {
+  margin: 1em auto 0 auto;
+  text-align: center;
+}
+
+#description {
+  text-align:center;
+  margin: 1em auto 2em auto;
+  font-style:italic;
+}
+
+#survey-form {
+  width:60vw;
+  margin: 0 auto;
+  background-color: rgba(35, 31, 41, 0.4);
+  padding:15px;
+  border-radius:5px; /*rouned corners*/
+}
+
+label {
+  display:block; /*causes only one to be on each line*/
+  margin: 0.5rem 0; /*gives margins to all the labels, including radio buttons*/
+}
+
+input {
+  width:100%;
+  margin-top: 10px; /*this gives margins to name, email, age between input field and label. Input's class overrides margins for the radio buttons and check boxes*/
+  color:grey;
+}
+
+.survey-item {
+  margin-bottom: 1.5em; /*give the questions in the survey some margin between each other*/
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/*styling the name, email, and age fields*/
+.survey-text {
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius:3px;
+}
+
+.survey-text:focus {
+  border: 1px solid grey;
+  outline:none; /*removes the ugly black border*/
+  box-shadow: 0 0 10px white;
+}
+
+select {
+  color:grey;
+  margin: 0.5em 0 0 0;
+  border-radius:3px;
+  padding: 5px;
+  width:100%;
+  outline:none;
+}
+
+select:focus {
+  box-shadow: 0 0 10px white;
+}
+
+/*Aligning the radio buttons and check boxes nicely*/
+.radio-checkbox { 
+  width: unset;
+  margin: 0 0.5em 0 0; /*top and bottom margin 0 are important*/
+  vertical-align: middle; /*makes a small difference*/
+}
+
+textarea {
+  width: 100%;
+  min-height:50px;
+  border-radius:3px;
+  font-family: Tahoma;
+  padding: 5px;
+}
+
+textarea:focus {
+  outline:none;
+  box-shadow: 0 0 10px white;
+}
+
+#submit {
+  background-color:#198754;
+  border:none;
+  border-radius:3px;
+  min-height:30px;
+  padding:5px;
+  color:white;
+}
